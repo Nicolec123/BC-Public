@@ -1,0 +1,57 @@
+.form_busca {
+left: 5%;
+position: relative;
+    width: 50%;
+    text-align: right;
+    margin-top: 1%;
+    margin-right: 4%;
+  }
+  
+.form_container {
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse;
+    left: 10%;
+    position: relative;
+   
+}
+  .form_busca form {
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .form_busca i {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .form_busca input {
+    height: 40px;
+    width: 100%;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    background-color: #f1aa66;
+    padding-left: 40px;
+    border-radius: 10px;
+    border: 1px solid #eb9545;
+  }
+
+  .form_select {
+    display: flex;
+    padding: 10px;
+    font-size: 16px;
+    left: -0.5%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.form_busca input:active{
+  border: 1px solid #eb9545;
+
+}

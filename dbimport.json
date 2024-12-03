@@ -1,0 +1,40 @@
+[
+    {
+      "id": 1,
+      "dataImportacao": "2024-11-20",
+      "nomeArquivo": "relatorio_01.xls",
+      "formato": ".xls",
+      "quantidadeCNPJ": 50,
+      "totalArquivoCliente": 100,
+      "totalArquivoSistema": 98,
+      "usuario": "admin",
+      "arquivo": "/path/to/arquivo1",
+      "detalhes": "/path/to/detalhes1"
+    },
+    
+    {
+      "id": 2,
+      "dataImportacao": "2024-11-21",
+      "nomeArquivo": "relatorio_02.txt",
+      "formato": ".txt",
+      "quantidadeCNPJ": 30,
+      "totalArquivoCliente": 70,
+      "totalArquivoSistema": 70,
+      "usuario": "user123",
+      "arquivo": "/path/to/arquivo2",
+      "detalhes": "/path/to/detalhes2"
+    },
+    {
+      "id": 3,
+      "dataImportacao": "2024-11-22",
+      "nomeArquivo": "relatorio_03.csv",
+      "formato": ".csv",
+      "quantidadeCNPJ": 20,
+      "totalArquivoCliente": 50,
+      "totalArquivoSistema": 50,
+      "usuario": "analista01",
+      "arquivo": "/path/to/arquivo3",
+      "detalhes": "/path/to/detalhes3"
+    }
+  ]
+  

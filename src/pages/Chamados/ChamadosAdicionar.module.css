@@ -1,0 +1,108 @@
+
+.conatiner_adicionar_chamado {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3%;
+}
+
+.conatiner_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.adicionar_chamado_container_filtro {
+    margin-bottom: 20px;
+}
+
+.inputFiltro {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 210px;
+}
+
+#button_adicionar  {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color:#EE8421;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 100%;
+}
+
+#button_adicionar:hover {
+    background-color: #e2e4e7;
+    color: #EE8421;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.chamados_table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.chamados_table th, .chamados_table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.chamados_table th {
+    background-color: #f2f2f2;
+}
+
+.smallTable {
+    font-size: 0.9em;
+}

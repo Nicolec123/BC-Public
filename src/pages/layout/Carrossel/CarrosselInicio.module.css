@@ -1,0 +1,84 @@
+.container2 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 5%;
+    position: relative; /* Adiciona um contexto de posicionamento para os botões */
+}
+
+.carrousel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: calc((112vw - 230px)*(400 / 1500));
+    max-height: 400px;
+    position: relative;
+    left: 50%;
+}
+.container2 {
+    width: 100%;
+   
+    transition: width 0.3s, height 0.3s;
+}
+
+/* CarrosselEmpresa.module.css */
+
+.controls2 {
+    position: absolute;
+    left: 37%;
+    top: 50%;
+    width: 100%;
+    gap: 200px;
+    max-width: 210px;
+    display: flex;
+    transform: translateY(-50%);
+}
+
+.controls2 button {
+    background-color: #2f2f3036;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 15%;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.controls2 button:hover {
+    background-color: #606161;
+}
+
+/*  para o carrossel redimensionado */
+.small2 {
+    max-width: 200px;
+    margin-left: 51%;
+    width: 100%; /* Define largura fixa */
+    height: auto; /* Permite que a altura se ajuste à imagem */
+    transition: width 0.3s, height 0.3s;
+}
+
+.small2 .carousel img {
+    width: 1200px; /* Garante que a imagem também seja redimensionada */
+    height: auto;
+}
+
+.small2 .controls {
+    left: 50%;
+    width: 1150px; /*  tamanho do carrossel reduzido */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: space-between;
+}
+
+.small2 .controls button {
+    background-color: brown;
+    padding: 5px 10px; /* Reduz o padding para botões menores */
+    font-size: 12px; /* Diminui o tamanho da fonte */
+    border-radius: 3px;
+}
+

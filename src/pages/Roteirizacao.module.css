@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+  .data, .numeroRoteirizacao, .cpf{
+    flex: 0 0 200px; /* Flex-grow, flex-shrink, flex-basis */
+    left: -10%;
+    position: relative;
+    margin-top: 7%;
+    padding: 15px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  /*  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);*/
+  }
+  .nomeEmpresa {
+    /*max-width: 350px !important;*/
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    left: -10%;
+    position: relative;
+    margin-top: 7%;
+    padding: 15px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input {
+    width: 100%;
+    max-width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .data input[type="date"], .numeroRoteirizacao input[type="text"], .cpf input[type="text"], .nomeEmpresa input[type="text"] {
+    width: calc(100% - 16px); /* Ajusta a largura para considerar o padding */
+  }
+  
+  .data input[type="date"]:focus, .numeroRoteirizacao input[type="text"]:focus, .cpf input[type="text"]:focus, .nomeEmpresa input[type="text"]:focus {
+    border-color: #eba931;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  
+  .roteirizacaoStyles.paragrafo_selects{
+    font-size: 16px;
+    /* color: #666; */
+    POSITION: relative;
+    /* margin-top: 10%; */
+    left: 31%;
+}
+
+
+
+  /*select:hover{
+background-color: #eba931;  }
+*/

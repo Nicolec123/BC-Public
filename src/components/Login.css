@@ -1,0 +1,788 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    min-height: 75%;
+}
+
+body.dark #profile-selection h2{
+    color: white;
+}
+
+
+
+body.dark #loginContainer h2{
+    color: rgb(252, 249, 249);
+}
+
+body.dark .lock-icon{
+    color: rgb(252, 249, 249);
+}
+
+body.dark .user-icon{
+    color: white;
+}
+
+
+
+.polygon-container {
+    /*top: -50%;*/
+
+    left: 10%;
+    position: relative;
+    width: 1200px;  
+    height: 700px; 
+    overflow: hidden; /* Para evitar scroll se algo ultrapassar */
+    
+
+}
+
+.polygon {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.img{
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.img1{
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height:50vh;
+    object-fit: cover;
+}
+
+.line {
+    border-radius: 15PX;
+    position: absolute;
+    background-color: #f19c3a; /* Cor das linhas */
+    height: 34px; /* Espessura das linhas */
+    transform: translateX(-50%); /* Ajusta a posição para o centro */
+}
+
+/* Inclinações das linhas internas */
+.line1 {
+
+    left:63%;
+    width: 54%;
+    top: 53%; /* Posição da linha superior */
+    transform: translateX(-30%) rotate(-24.9deg); /* Inclinação para cima à esquerda */
+}
+
+.line2 {
+    left: 32%;
+    width: 55%;
+    top: 70%; /* Posição da linha do meio */
+    transform: translateX(-60%) rotate(25deg); /* Inclinação para cima à direita */
+}
+
+.line3 {
+    left: 63%;
+    width: 55%;
+    top: 70%; /* Posição da linha do meio */
+    transform: translateX(-30%) rotate(-25deg); /* Inclinação para cima à esquerda */
+}
+
+.line4 {
+    left: 32%;
+    width: 55%;
+    top: 53%; /* Posição de outra linha interna */
+    transform: translateX(-60%) rotate(24.5deg); /* Inclinação para cima à direita */
+}
+
+.line5 {
+    left:63%;
+    width: 47.5%;
+    top: 22%; /* Posição da linha superior */
+    transform: translateX(-35%) rotate(27.5deg); /* Inclinação para cima à esquerda */
+}
+
+.line6 {
+    left: 20%;
+    width: 47.5%;
+    top: 22%; /* Posição da linha superior */
+    transform: translateX(-30%) rotate(-27.5deg); /* Inclinação para cima à esquerda */
+}
+
+#profile-selection {
+    justify-content: center; /* Centraliza os perfis horizontalmente */
+    align-items: center; /* Alinha os perfis verticalmente */
+    position: absolute;
+    width: 880px; /* Largura desejada */
+    height: 430px; /* Altura desejada */
+    top: 9%;
+    /*clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);*/
+    /*background-color: rgba(0, 0, 0, 0.5);  Fundo semi-transparente */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    color: #353434; /* Cor do texto para contraste */
+}
+
+
+
+#profile-selection h2{
+    position: relative;
+    left: 20%;
+    top: 25%;
+    margin-bottom: 65px;
+    color:#313131;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    transition: color 0.3s;
+    transform: translateX(0, -5px);
+}
+.flex-box{
+    left: 19%;
+    display: flex !important;
+    flex-direction: row !important;
+    position: relative;
+    gap: 10px;
+    top: 15%;
+}
+.profile {
+    color: #F59336;
+
+    top: 25%;
+    padding: 15px 30px;
+    margin: 10px; /* Espaçamento entre os perfis */
+    background-color: #dcdcdc; /* Cor de fundo ao passar o mouse */
+    border-radius: 8px;
+    border: 1px solid #444141;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 45px;
+left: 20%;
+position: relative;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.profile:hover {
+    transition: background-color 0.3s, transform 0.3s; /* Voltando a cor e efeito ao soltar o botão */
+    color: #666665;
+    background-color:  #F59336; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.profile:active {
+    background-color: #b0b0b0; /* Cor quando clicado */
+    transform: scale(2); /* Efeito de redução ao clicar */
+    transition: background-color 0.3s, transform 0.3s; /* Voltando a cor e efeito ao soltar o botão */
+    color: #F59336;
+}
+
+
+.user-icon{
+    display: flex;
+    position: relative;
+    font-size: 40px; /* Tamanho do ícone */
+    color:  #464444; /* Cor do ícone */
+    left: -40px;
+    top: 45px;
+    width: 100%;
+    max-width: 50px;
+
+}
+
+.lock-icon{
+    display: flex;
+    position: relative;
+    font-size: 40px; /* Tamanho do ícone */
+    color:  #616060; /* Cor do ícone */
+    left: -27px;
+    top: 55px;
+    width: 100%;
+    max-width: 50px;
+
+}
+
+/* Exibe o formulário quando ativo */
+.polygon.active + #loginContainer {
+    display: flex; /* Alterar para flex para garantir que o conteúdo dentro seja exibido corretamente */
+}
+
+#loginContainer {
+    display: none; /* Oculto inicialmente */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    height: 40vh;
+    width: 100%;
+    flex-direction: column; /* Garantindo que os itens dentro fiquem em coluna */
+    gap: 15px; /* Espaço entre os itens */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+  
+#loginContainer h2 {
+    text-align: center;
+    margin-bottom: 2px;
+    color: #414040;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    transition: color 0.3s;
+    transform: translateX(0, -5px);
+    margin-top: 20px;
+}
+
+#loginForm {
+    display: flex; /* Remover display: none */
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os campos */
+    position: relative;
+}
+
+#loginForm input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #918d8d;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+#loginForm input:focus {
+    border-width: 5px; 
+
+    border-color: rgb(244, 115, 44);
+    outline: none;
+    box-shadow: 0 0 5px rgb(244, 115, 44);
+  }
+
+#loginForm button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #797572;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    width: 30%;
+    transition: background-color 0.3s;
+}
+.flex-box-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+    gap: 18%;
+    margin-top: 2%;
+   
+}
+#loginForm button:hover {
+    background-color: #e0ddda;
+    transition: background-color 0.3s;
+    color: #F59336;
+}
+
+.logo {
+    width: 100%;
+    display: block;
+    height: 16vh;
+    max-width: 200px;
+    margin: -80px auto 1px;
+    left: 25%;
+ 
+}
+
+
+
+@media (max-width: 1200px){
+
+    body, html {
+       overflow: auto !important;
+       min-height: 75vh; /* 75% da altura da viewport */
+    }
+    
+.polygon-container {
+    width: 900px;  
+    height: 700px; 
+    left: 0 !important;
+}
+.polygon {
+    top:7% ;
+  
+}
+
+.line1 {
+    left:62%;
+    width: 53%;
+    top: 53%; /* Posição da linha superior */
+    transform: translateX(-30%) rotate(-24.9deg); /* Inclinação para cima à esquerda */
+}
+
+.line2 {
+    left: 32%;
+    width: 55%;
+    top: 70%; /* Posição da linha do meio */
+    transform: translateX(-60%) rotate(25deg); /* Inclinação para cima à direita */
+}
+
+.line3 {
+    left: 63%;
+    width: 55%;
+    top: 70%; /* Posição da linha do meio */
+    transform: translateX(-30%) rotate(-25deg); /* Inclinação para cima à esquerda */
+}
+
+.line4 {
+    left: 33%;
+    width: 53%;
+    top: 53%; /* Posição de outra linha interna */
+    transform: translateX(-60%) rotate(24.5deg); /* Inclinação para cima à direita */
+}
+
+
+.line5{
+
+    left:65%;
+    width: 52.5%;
+    top: 18%; /* Posição da linha superior */
+    transform: translateX(-35%) rotate(27.5deg); /* Inclinação para cima à esquerda */
+}
+
+.line6{
+
+        left: 20%;
+        width: 53.5%;
+        top: 18%; /* Posição da linha superior */
+        transform: translateX(-35%) rotate(-27deg); /* Inclinação para cima à esquerda */
+}
+
+.flex-box {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px;
+    left: 22%;
+    position: relative;
+    top: 15%;
+
+}
+#login{
+    height: 280px;
+    width: 370px;
+    top: 53.5%;
+    left: 50.5%;
+}
+
+#login span {
+    left: 140px;
+    top: 60px;
+    font-size: 38px; 
+
+}
+
+
+
+#profile-selection h2{
+    margin-bottom: 38px;
+    font-size: 37px;
+}
+
+
+.profile {
+    padding: 15px 20px;
+    margin: 5px; /* Espaçamento entre os perfis */
+    margin-bottom: 52px;
+    width: 89px; 
+    font-size: 17px;
+    left: 2%;
+}
+
+}
+
+@media (max-width: 911px){
+    
+    .polygon-container {
+        width: 800px;  
+        height: 660px; 
+        left: 0 !important;
+    }
+
+    .polygon {
+        top:7% ;
+    }
+  
+    .line1 {
+        background-color:#ffffff6b;
+        left:62%;
+        width: 52%;
+        top: 53%; /* Posição da linha superior */
+        transform: translateX(-30%) rotate(-24.9deg); /* Inclinação para cima à esquerda */
+    }
+    
+    .line2 {
+        left: 32%;
+        width: 55%;
+        top: 70%; /* Posição da linha do meio */
+        transform: translateX(-60%) rotate(25deg); /* Inclinação para cima à direita */
+    }
+    
+    .line3 {
+        left: 63%;
+        width: 55%;
+        top: 70%; /* Posição da linha do meio */
+        transform: translateX(-30%) rotate(-25deg); /* Inclinação para cima à esquerda */
+    }
+    
+    .line4 {
+        background-color:#ffffff6b;
+        left: 33%;
+        width: 53%;
+        top: 53%; /* Posição de outra linha interna */
+        transform: translateX(-60%) rotate(24.5deg); /* Inclinação para cima à direita */
+    }
+    
+.polygon.active .line5{
+    left:63%;
+    top: 18%; /* Posição da linha superior */
+    transform: translateX(-35%) rotate(31deg); /* Inclinação para cima à esquerda */
+}
+
+.polygon.active .line6{
+        left: 20%;
+        top: 18%; /* Posição da linha superior */
+        transform: translateX(-35%) rotate(-30deg); /* Inclinação para cima à esquerda */
+}
+
+#login{
+    height: 240px;
+    width: 310px;
+    top: 54%;
+    left: 50.2%;
+    clip-path: polygon(43.2% 0%, 100% 50%, 50% 80%, 0% 50%); /* Definindo o losango, não altere esse satanás */
+}
+
+#login span {
+    left: 115px;
+    top: 40px;
+}
+
+#profile-selection {
+    top: 10%;
+}
+
+#profile-selection h2{
+    margin-bottom: 38px;
+    font-size: 35px;
+    left: -5%;
+
+}
+
+.flex-box {
+    gap: 15px;
+}
+
+.profile {
+    width: 85px; 
+    font-size: 18px;
+    padding: 15px 15px;
+}
+    
+    }
+    
+@media (max-width: 805px){
+  
+    
+    .polygon-container {
+        width: 700px;  
+        height: 600px; 
+        left: 0 !important;
+    }
+    .polygon {
+        top:7% ;
+      
+    }
+   
+    .polygon.active .line5{
+    
+        left:62%;
+        width: 54%;
+        top: 17%; /* Posição da linha superior */
+        transform: translateX(-35%) rotate(31deg); /* Inclinação para cima à esquerda */
+    }
+    
+    .polygon.active .line6{
+    
+            left: 20%;
+            width: 54%;
+            top: 17%; /* Posição da linha superior */
+            transform: translateX(-35%) rotate(-31deg); /* Inclinação para cima à esquerda */
+    }
+    
+    #login{
+        height: 212px;
+        width: 280px;
+        top: 53.5%;
+        left: 50.3%;
+        clip-path: polygon(43.2% 0%, 100% 50%, 50% 80%, 0% 50%); /* Definindo o losango, não altere esse satanás */
+    }
+    
+    #login span {
+        left: 110px;
+        top: 32px;
+        font-size: 32px;
+    }
+    
+    #profile-selection {
+        top: 10%;
+    }
+    
+    #profile-selection h2{
+        left: -11%;
+    }
+    .flex-box {
+        left: 15%;
+        top: 15%;
+    }
+    
+    .profile {
+        width:70px; 
+        font-size: 15px;
+    }
+        
+        }
+
+    @media (max-width: 710px){
+      
+        .polygon-container {
+            width: 650px;  
+            height: 700px; 
+            left: 0 !important;
+        }
+    
+        .polygon {
+            top:5% ;
+            
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+        }
+
+        #profile-selection {
+            top: 10%;
+        }
+        
+        #profile-selection h2{
+            left: -15%;
+        }
+        .flex-box {
+            left: 12%;
+        }
+        
+        
+/* Inclinações das linhas internas */
+
+.line3 {
+    left: 62%;
+}
+
+.line5 {
+    width: 53%;
+    top: 33%; /* Posição da linha superior */
+
+}
+
+.line6 {
+    width: 53%;
+    top: 33%; /* Posição da linha superior */
+
+}
+
+
+
+#login{
+    height: 210px;
+    width: 273px;
+    top: 52.1%;
+    left: 50.4%;
+    clip-path: polygon(43.2% 0%, 100% 50%, 50% 80%, 0% 50%); /* Definindo o losango, não altere esse satanás */
+}
+
+#login span {
+    left: 107px;
+    top: 32px;
+    font-size: 32px;
+}
+        
+        }
+
+
+        
+    
+    @media (max-width: 650px){
+      
+        .polygon-container {
+            width: 620px;  
+            height: 700px; 
+            left: 0 !important;
+    
+        }
+    
+        .polygon {
+            top:5% ;
+            
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+          
+        }
+
+   
+/* Inclinações das linhas internas */
+.polygon.active .line2{
+    width: 56%;
+    top: 77%; /* Posição da linha do meio */
+}
+
+.polygon.active .line3{
+    width: 55.5%;
+    top: 77%; /* Posição da linha do meio */
+}
+
+#profile-selection {
+    top: 10%;
+}
+
+#profile-selection h2{
+    left: -15%;
+    top: 25%;
+}
+.flex-box {
+    left: 12%;
+    top: 27%;
+}
+   
+        }
+
+        
+    
+    @media (max-width: 580px){
+       
+        .polygon-container {
+            width: 500px;  
+            height: 800px; 
+            left: 0 !important;
+
+        }
+     
+    
+        .polygon {
+            top:0.5% !important;
+            
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+          
+        }
+
+   
+/* Inclinações das linhas internas */
+.polygon.active .line2{
+    width: 56%;
+    top: 77%; /* Posição da linha do meio */
+}
+
+.polygon.active .line3{
+    left: 300px;
+    width: 55.5%;
+    top: 77%; /* Posição da linha do meio */
+
+}
+
+  
+.polygon.active .line5{
+    
+    top: 15%; /* Posição da linha superior */
+}
+
+.polygon.active .line6{
+
+        top: 15%; /* Posição da linha superior */
+}
+
+
+#login{
+    height: 190px;
+    width: 245px;
+    top: 51.1%;
+    left: 50.4%;
+    clip-path: polygon(43.2% 0%, 100% 50%, 50% 80%, 0% 50%); /* Definindo o losango, não altere esse satanás */
+}
+
+#login span {
+    left: 90px;
+    top: 25px;
+    font-size: 32px;
+}
+        
+     
+
+#profile-selection {
+    justify-content: center; /* Centraliza os perfis horizontalmente */
+    align-items: center; /* Alinha os perfis verticalmente */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#profile-selection {
+    top: 10%;
+}
+
+#profile-selection h2{
+    left: -2%;
+    top: 80%;
+    font-size: 30px;
+}
+.flex-box {
+    left: 20%;
+    top: 85%;
+    gap: 8px;
+    margin: 2px;
+}
+.profile {
+    width: 70px; 
+    font-size: 15px;
+    margin: 2px; /* Espaçamento entre os perfis */
+    margin-bottom: 20px;
+    cursor: pointer; /* Define o cursor como ponteiro */
+    justify-content: center;
+    margin-left: 5%; /* Garante que os botões fiquem à direita */
+}
+
+
+
+#loginContainer {
+    max-width: 400px;
+    top: 48%;
+}
+
+    }
+
+    

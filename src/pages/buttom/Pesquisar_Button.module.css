@@ -1,0 +1,38 @@
+
+/* Estilo para os botões */
+
+#searchButton {
+    display: flex;
+    align-items: center;
+    /* margin-left: -5%; */
+    margin-top: -7%;
+    margin-right: 10%;
+    max-height: 4vh;
+    font-size: 16px;
+    /* top: -25%; */
+    /* position: relative; */
+    float: inline-end;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    /* margin-bottom: 25px; */
+    justify-content: center;
+    width: 100%;
+    max-width: 100px;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #585757;
+    color: #f1f1f1;
+    border-radius: 4px;
+}
+
+#searchButton:hover {
+    background-color: #aaa5a5; /* Cor do background ao passar o mouse */
+    color: #4d4c4c; /* Cor do texto ao passar o mouse */
+}
+
+#searchButton i {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}

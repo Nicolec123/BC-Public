@@ -1,0 +1,28 @@
+.searchButtonIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #474747;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    position: relative;
+    left: 0%;
+    height: 5.7vh;
+    margin-right: 1.0%;
+    width: 7%;
+    margin-top: 7%;
+    cursor: pointer;
+    color: #ee8421;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.searchButtonIcon :hover {
+    background-color: #ee8421;
+    color: #555;
+}
+
+.searchIcon {
+    font-size: 16px;
+    transition: color 0.3s ease; /* Suaviza a transição de cor do ícone */
+}

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container_menu {
+    padding: 20px;
+    position: absolute;
+    top: 2.5%;
+    left: 0;
+    width: 100%;
+    max-width: 240px;
+    z-index: 200000;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.menu.closed {
+    max-height: 14vh;
+    opacity: 0;
+    overflow-y: hidden;
+}
+
+.menu.open {
+    height: calc(90vh - 60px); /* Ajusta a altura do menu para caber dentro do contêiner */
+      opacity: 1;
+    overflow-y: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menuButton, .backButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #cf6b3c;
+    position: relative; 
+    top: 5px;
+    left: 25%;
+}
+
+.menuButton {
+    right: 20px; /* Coloca o botão de menu à direita */
+}
+
+.backButton {
+    left: 20px; /* Coloca o botão de voltar à esquerda */
+}
+
+.menu li a {
+    border-bottom: 1px solid #f59336;
+    padding: 10px 0;
+    display: block;
+    color: #cf6b3c;
+    font-weight: 700;
+    text-align: left;
+    padding: 14px 1px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Estilos para navegadores WebKit (Chrome, Safari) */
+.menu::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Estilos para navegadores Firefox */
+.menu {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+

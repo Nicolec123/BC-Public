@@ -1,0 +1,215 @@
+.container_botoes {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.status_pedidos,.status_regiao{
+    left: 9%;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    color: #555454;
+}
+
+.status_regiao {
+    left: 4%;
+
+}
+.container_label_filtros {
+    display: flex;
+    flex-direction: row; /* Alinha os itens em linha */
+}
+
+.data_geracao, .data_pagamento {
+    color:#626362;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Espaço entre o label e o input */
+height: 5%;
+
+}
+
+
+#botao {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    background-color: #626362;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+#botao:hover {
+    background-color: #ee8421;
+}
+
+.container_table {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    transition: width 0.8s ease;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+}
+
+thead {
+    background-color: #f5f5f5;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+   /* border-left: 1px solid #a3a1a1;*/
+
+
+}
+
+
+th {
+    background-color: #ee8421;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    color: #333;
+    font-size: 13px;
+}
+
+.colPrevisaoLiberacao {
+    width: 140px;
+}
+.colPrevisãodoPagamento{
+    width: 120px;
+}
+.colRegiao {
+    width: 100px;
+}
+.colDatadaGeração{
+    width: 100px;
+
+}
+
+.colDatadoPagamento{
+    width: 70px;
+}
+
+.container_filtros {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.inputFiltro, .selectFiltro {
+    left: -1%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 200px;
+    margin-top: 2.5%;
+    position: relative;
+    height: 2%;
+    transition: border-color;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* Estilos para navegadores WebKit (Chrome, Safari) */
+.menu::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Estilos para navegadores Firefox */
+.menu {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+/* Botão do menu */
+.menuButton {
+    font-size: 16px;
+    padding: 8px 12px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.chamados_table {
+    width: 95%;
+    margin: 5% 2%;
+    border-collapse: collapse;
+}
+
+/* Classe para as colunas redimensionáveis */
+.resizableColumn {
+    position: relative;
+}
+
+/* Estilo do ícone de arraste (handle) */
+.resizeHandle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    cursor: col-resize;
+    transition: background-color 0.2s;
+}
+
+.resizeHandle:hover {
+    background-color: #ccc;
+}
+
+.smallTable {
+    width: 70%;
+    margin-left: 19%;
+}
+
+body {
+    cursor: default;
+}

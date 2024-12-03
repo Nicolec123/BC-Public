@@ -1,0 +1,18 @@
+#button {
+    margin-top: 5%;
+    background-color: #626362; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin-bottom: 10%;
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+#button:hover {
+    color: #f0efee;
+    background-color:  #ee8421; /* Cor de fundo ao passar o mouse */
+}
+

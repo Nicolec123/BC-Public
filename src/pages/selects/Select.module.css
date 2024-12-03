@@ -1,0 +1,25 @@
+select{
+    position: relative;
+    left: 20%;
+    margin-top: 3%;
+    display: block; /* Faz com que cada select ocupe uma linha inteira */
+    margin-bottom: 5%; /* Espaçamento entre os selects */
+    width: 100%; /* Ajusta a largura dos selects */
+    max-width: 200px;
+    height: 2%;
+    padding: 8px; /* Adiciona um pouco de padding para melhor aparência */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    border: none; /* Remove o padrão do border */
+    outline: none; /* Remove o padrão do outline */
+    background-color: #f1f1f1; /* Cor do background */
+    color: #333; /* Cor do texto */
+    border-radius: 4px; /* Aplica um arredondamento ao border */
+    cursor: pointer; /* Aplica um cursor para indicar que é um botão */
+    transition: background-color 0.3s ease; /* Efeito de transição */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
+}
+.select option {
+    color: black;
+    background-color: white;
+    padding: 12px 20px;
+}

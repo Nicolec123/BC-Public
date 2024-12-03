@@ -1,0 +1,125 @@
+
+.CabeçarioEmpresaContainer {
+    background-color: #ee8421;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    height: 9.2vh;
+    border-radius:0 0 10px;
+
+    margin-left: 15.8%;
+    max-width: 1200px;
+    transition: height 0.3s ease; /* Adiciona uma transição suave */
+    overflow: hidden; /* Garante que o conteúdo não transborde */
+}
+
+.CabeçarioEmpresaContainer.expanded {
+    height: 20vh !important; /* Defina a altura desejada quando expandido */
+    border-radius: 0 10px 10px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.badge_primary{
+    background-color: #1e67a3;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+.badge_important{
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.badge_primary_plano{
+    background-color: #6d6d6c;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+.badge_primary_pospago{
+    background-color: #d1bf1a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.badge_important {
+    background-color: #f44336;
+}
+
+.badge_primary_ativo, .badge_important_ativo{
+    background-color: #1fb612;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+.badge_important_titulo{
+    background-color: #835208;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+.bold {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background-color: #835208;
+}
+
+.page_meta, .divider{
+    font-size: 16px;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    background-color: #835208;
+}
+
+.expandButton {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 2;
+}
+
+/* Definindo o conteúdo expandido */
+.content {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+/* Ajustes para responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .expandButton {
+        align-self: flex-start;
+    }
+}

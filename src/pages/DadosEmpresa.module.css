@@ -1,0 +1,64 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+
+
+.menuDados{
+    height: 100vh;
+    max-height: 1000px;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /*background-color:rgb(0 0 0 / 13%);*/
+    color:#dd8a0f;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+
+
+    /*&:hover{
+        background-color: #340d9f;
+    }*/
+}
+
+
+.nav_tabs{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    text-align: center;
+    /* left: 20%; */
+    top: 10%;
+    font-size: 40px;
+    position: relative;
+
+
+}
+
+.nav_tabs li{
+    display: table-cell;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.smallTable2{
+    width: 80%;
+    left:15%;
+    position: relative;
+}
+

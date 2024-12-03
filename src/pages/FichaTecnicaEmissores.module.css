@@ -1,0 +1,103 @@
+.flex_box_filtros{
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    /* border-radius: 5px;*/
+}
+
+.flex_box_filtros_label{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.mostrar_text {
+    margin-top: 5%;
+    position: relative;
+    /* margin-right: 1%; */
+    font-weight: bold;
+    }
+
+select .form_control_input_sm{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    left: -1%;
+    align-items: baseline;
+    max-width: 210px;
+}
+
+.label_options{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 16px;
+
+}
+
+.FichaTecnicaEmissores_label_left{
+    margin-top: 2%;
+}
+
+.FichaTecnicaEmissores_label_right input{
+    background-color: #ffffff;
+    height: 5vh;
+    padding: 5px;
+    /* border-color: brown; */
+    border-radius: 5px; 
+    border: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+.label_buscar{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.label_ordenar{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    max-width: 410px;
+    width: 100%;
+    margin-top: 1.5%;
+}
+.ordenar{
+    right: -10%;
+    position: relative;
+}
+  
+
+
+.downloadIcon {
+    color: #007bff; /* Altere a cor do ícone */
+    font-size: 20px; 
+    cursor: pointer; /* Adicione um cursor de ponteiro ao passar o mouse */
+    transition: color 0.3s ease; /* Adicione uma transição suave para alterações de cor */
+}
+
+.downloadIcon:hover {
+    color: #0056b3; 
+}
+
+/* Estilos para paginação */
+ .pagination { display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    height: 3vh;
+    width: 100%;
+    float: inline-end;
+    max-width: 250px;
+    BACKGROUND-COLOR: #ffffff; }
+     .pageItem { list-style: none; margin: 0 5px; } 
+     .pageLink { text-decoration: none; color: #007bff; padding: 5px 10px; border: 1px solid #ddd; border-radius: 5px; } 
+     .pageLink:hover { background-color: #f0f0f0; }
+      .active .pageLink { background-color: #007bff; color: white; border-color: #007bff; }

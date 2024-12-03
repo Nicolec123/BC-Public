@@ -1,0 +1,28 @@
+.header {
+    background-color: #e7e4e2;
+    color: #cf6b3c;
+    padding: 1px; /* Adicionei um pouco de padding para espaçamento */
+}
+
+.infor {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 25px; /* Espaçamento entre os itens */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura */
+}
+
+.empresa{
+    text-align: center;
+    color: #da632c;
+    font-size: 20px;
+    right: 30%;
+    position: relative;
+
+}
+
+.admin{
+    color: #bebaba;
+}
+
+

@@ -1,0 +1,183 @@
+#button_adicionar_produtos_recorrentes  {
+    margin-left: 5%;
+    margin-top: 6%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    height: 2%;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #585757;
+    color: #f1f1f1;
+    border-radius: 4px;
+}
+
+#button_adicionar_produtos_recorrentes:hover {
+    background-color: #e2e4e7;
+    color: #EE8421;
+}
+
+#button_adicionar_produtos_recorrentes i {
+    font-weight: 900;
+    margin-right: 2%;
+    margin-left: -2%;
+}
+
+#editar_PCC1 a,#editar_PCC2 a,#editar_PCC3  a{
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+
+
+#editar_PCC1 a:hover, #editar_PCC2 a:hover, #editar_PCC3 a:hover {
+    background-color: #f0ae71;
+    color: #f3f2f2;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+
+#editar_PCC1 a {
+color: #f3f2f2;
+background-color: rgb(210, 72, 238);
+}
+
+#editar_PCC2 a {
+    color: #f0eeed;
+    background-color: rgb(14, 153, 107);
+    }
+
+    #editar_PCC3 a {
+        color: #f3f0ee;
+        background-color: rgb(207, 81, 42);
+        }
+
+
+
+        .infoIcon {
+            color: red;
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            font-weight: 800;
+cursor: pointer;
+            &:hover {
+                color: blue;
+            } 
+        }
+        .infoIcon:active {
+             color: blue;
+         }
+
+
+
+
+
+        
+
+
+
+
+.modal_title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #e0dada;
+    text-align: center;
+
+}
+
+.modal_content {
+    font-size: 1em;
+    line-height: 1.5;
+    list-style:3vh;
+    color: #e9e7e7;
+}
+ .modal_close_button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 1em;
+    cursor: pointer;
+    left: 40%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.modal_close_button:hover {
+    background-color: #0056b3;
+}
+
+
+.body.dark.modal_title h2{
+    color: #e6712e !important;
+}
+.customOverlay { background-color: rgba(0, 0, 0, 0.75); } .customModal { position: absolute; top: 38%; left: 50%; right: auto; bottom: auto; margin-right: -50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.54); padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); max-width: 500px; width: 100%;line-height: 3vh; }
+
+.smallTablePr{
+    width: 82%;
+    margin-left: 17%;
+}
+.colProdutospr{
+    width: 110px;
+}   
+.colVigencia{
+
+}
+
+.colVidasContradas{
+    width: 70px;
+}   
+
+.colVidasAtivas{
+    width: 70px;
+
+}
+
+.colVidasFolhas{
+    width: 70px;
+
+}
+
+.colVidasSunsidiadas{
+    width: 70px;
+
+}
+
+.colDatadaGeração{
+    width: 70px;
+
+}
+
+.colValorCobrado{
+    width: 70px;
+
+}
+
+.colAtivo{
+
+}
+
+.colEdicao{
+
+}
+
+.colAnexar{
+
+}
+
+.colAcao{
+
+}
+
+

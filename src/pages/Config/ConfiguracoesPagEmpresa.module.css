@@ -1,0 +1,19 @@
+
+  .form_select {
+    margin-top: 1%;
+    margin-right: 0.9%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    float: inline-end;
+    max-width: 150px;
+    left: 0;
+    position: relative;
+
+}
+
+.form_select option {
+    padding: 0 !important;
+    font-size: 12px;
+    line-height: 16px;
+}

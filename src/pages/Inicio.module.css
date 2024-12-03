@@ -1,0 +1,121 @@
+#searchButtonInicio {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border: 0;
+    float: right;
+    font-size: 20px;
+    color: white;
+    background-color: #f1aa66;
+    padding-left: 40px;
+    border-radius: 10px;
+    border: 1px solid #eb9545;
+    max-width: 150px;
+    margin-top: -5.2%;
+    margin-right: 30%;
+    text-align: left;
+}
+
+#searchButtonInicio :hover {
+    background-color: #aaa5a5; /* Cor do background ao passar o mouse */
+    color: #4d4c4c; /* Cor do texto ao passar o mouse */
+}
+
+#searchButtonInicio  i {
+    position: relative;
+    left:-25% ;
+    margin-right: -17%;
+}
+
+.Inicio_conatiner_bc_avisos_eventos{
+    margin-top: 3%;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* gap: 300px; */
+    height: 40vh;
+    max-height: 500px;
+    background-color: #f5f3f0;
+    border: 2px solid #dd8a0f;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* margin-left: 12%; */
+    /* margin-right: 5%; */
+    position: relative;
+    flex-flow: nowrap;
+    left: 15%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+.bc_avisos_eventos{
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
+    height: 35vh;
+   
+}
+
+.bc_avisos_eventos1{
+align-items: flex-start;
+width: 100%;
+max-width: 500px;
+height: 35vh;
+
+}
+
+.bc_avisos_eventos1 :hover{
+    transition: background-color 0.5s, transform 0.3s; /* Voltando a cor e efeito ao soltar o botão */
+    background-color:  #F59336; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    
+    
+  
+}
+
+.bc_avisos_eventos :hover{
+    transition: background-color 0.5s, transform 0.3s; /* Voltando a cor e efeito ao soltar o botão */
+    background-color:  #F59336; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    
+}
+
+
+
+.bc_avisos_eventos h3{
+    color: rgb(65, 64, 64);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #dd8a0f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    
+}
+
+ .bc_avisos_eventos1 h3{
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid #dd8a0f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+
+}
+
+.bc_avisos_eventos1 a{
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+}
+
+.bc_avisos_eventos a{
+    color: rgb(206, 19, 19);
+    text-decoration: none;
+}
+
+body.dark.Inicio_conatiner_bc_avisos_eventos{
+    background-color: #232323;
+    color: white;
+}

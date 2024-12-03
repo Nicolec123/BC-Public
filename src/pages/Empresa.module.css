@@ -1,0 +1,21 @@
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    min-width: 75%;
+    display: flex;
+}
+html, body {
+    height: 100%; /* Garante que o body ocupe toda a altura da página */
+    overflow-y: hidden;
+    
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+
+

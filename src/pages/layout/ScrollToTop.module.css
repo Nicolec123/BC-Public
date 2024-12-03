@@ -1,0 +1,27 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* Garantir que o botão tenha um z-index maior que o do footer e outros elementos */
+    cursor: pointer;
+  }
+  
+  .icon {
+    background-color: rgba(51, 51, 51, 0.7); /* Cor semitransparente */
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    pointer-events: all; /* Garante que o botão seja clicável mesmo com outras camadas de elementos */
+  }
+  
+  
+  .icon:hover{
+    background-color: rgba(218, 132, 20, 0.9); /* Alterar cor do fundo ao passar o mouse */
+    color: rgb(66, 66, 66); /* Alterar cor do texto ao passar o mouse */
+  }

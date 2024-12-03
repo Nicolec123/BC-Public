@@ -1,0 +1,86 @@
+.container{
+    margin-top: 2%;
+    text-align: center;
+    position: relative; /* Adiciona um contexto de posicionamento para os botões */
+}
+.carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: calc((112vw - 230px)*(400 / 1500));
+    max-height: 400px;
+    position: relative;
+    left: 0;
+}
+
+.container {
+    width: 100%;
+    transition: width 0.3s, height 0.3s;
+}
+
+.carrossel img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+
+
+
+
+.controls {
+    position: absolute;
+    left: 1%; /* Alinhado ao carrossel */
+    top: 50%;
+    width:98%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.controls button {
+    background-color: #2f2f3036;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #606161;
+}
+
+/*  para o carrossel redimensionado */
+.small {
+    max-width: 200px;
+    margin-left: 51%;
+    width: 100%; /* Define largura fixa */
+    height: auto; /* Permite que a altura se ajuste à imagem */
+    transition: width 0.3s, height 0.3s;
+}
+
+.small .carrossel img {
+    width: 1200px; /* Garante que a imagem também seja redimensionada */
+    height: auto;
+}
+
+.small .controls {
+    left: 50%;
+    width: 1150px; /*  tamanho do carrossel reduzido */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: space-between;
+}
+
+.small .controls button {
+    padding: 5px 10px; /* Reduz o padding para botões menores */
+    font-size: 12px; /* Diminui o tamanho da fonte */
+    border-radius: 3px;
+}
+

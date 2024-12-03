@@ -1,38 +1,234 @@
+/* Resetando margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para html, body e #root */
+html, body, #root {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+    overflow: auto;
+}
+
+/* Estilo para links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px;
+    min-height: calc(100vh - 80px); 
+}
+
+/* Estilos gerais da App */
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333; /* Cor do texto padrão */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilo do botão de alternância de tema (lua/sol) */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.2s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.theme-toggle:hover {
+    transform: scale(1.2);
+}
+/* Tema Claro */
+body {
+    background-color: #e6e6e6; /* Cor de fundo do tema claro */
+    color: black; /* Cor do texto no tema claro */
+}
+
+
+/* Tema Escuro */
+body.dark {
+    background-color: #333; /* Cor de fundo escuro */
+    color: white; /* Cor do texto no tema escuro */
+}
+/* Estilos gerais para os ícones */
+.theme-icon {
+    font-size: 24px; /* Tamanho do ícone */
+    transition: color 0.3s ease; /* Efeito suave para a troca de cor */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Estilo para o ícone do sol */
+  .theme-icon .sun-icon {
+    color: yellow; /* Cor do ícone do sol no tema claro */
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Estilo para o ícone da lua */
+  .theme-icon .moon-icon {
+    color: #333; /* Cor do ícone da lua no tema claro */
   }
+  
+  /* Quando o tema for escuro (dark), altere as cores */
+  body.dark .theme-icon .sun-icon {
+    color: orange; /* Cor do ícone do sol no tema escuro */
+  }
+  
+  body.dark .theme-icon .moon-icon{
+    color: white; /* Cor do ícone da lua no tema escuro */
+  }
+  
+  /* Estilos para o botão */
+  .theme-toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 30px; /* Tamanho do botão */
+  }
+  
+  /* Opção adicional para um layout mais sofisticado */
+  button:focus {
+    outline: none;
+  }
+  
+
+/* Ajustando a cor de fundo das tabelas no tema escuro */
+body.dark table {
+    background-color: #444; /* Cor de fundo da tabela no tema escuro */
+    color: white; /* Cor do texto dentro da tabela no tema escuro */
 }
+
+body.dark thead {
+    background-color: #555; /* Cor do cabeçalho da tabela no tema escuro */
+}
+
+body.dark th {
+    background-color: #ee8421; /* Cor de fundo dos cabeçalhos no tema escuro */
+    color: white; /* Cor do texto dos cabeçalhos */
+
+}
+
+body.dark td {
+    color: white; /* Cor do texto nas células */
+    border-bottom: 1px solid #777; /* Cor da borda das células no tema escuro */
+}
+body.dark tbody tr:nth-child(even) {
+    background-color: #555; /* Cor de fundo das linhas pares no tema escuro */
+}
+
+body.dark tbody tr:hover {
+    background-color: #666; /* Cor de fundo ao passar o mouse sobre as linhas */
+}
+
+/* Ajustar as cores dos filtros e botões no tema escuro */
+body.dark .inputFiltro,
+body.dark .selectFiltro {
+    background-color: #555; /* Cor de fundo dos filtros no tema escuro */
+    color: white; /* Cor do texto dos filtros no tema escuro */
+    border: 1px solid #777; /* Cor das bordas dos filtros no tema escuro */
+}
+
+body.dark .inputFiltro::placeholder,
+body.dark .selectFiltro::placeholder {
+    color: #bbb; /* Cor do placeholder dos filtros */
+}
+
+body.dark .container_botoes {
+    background-color: #444; /* Cor de fundo do container de botões */
+}
+
+body.dark #botao {
+    background-color: #626362; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+}
+
+body.dark label{
+ color: #ee8421; /* Cor do botão quando clicado no tema escuro */
+}
+
+body.dark #botao:hover {
+    background-color: #ee8421; /* Cor do botão no hover no tema escuro */
+}
+
+/* Ajuste da sombra da tabela e outros elementos no tema escuro */
+body.dark table,
+body.dark .container_table {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); /* Sombra mais intensa no tema escuro */
+}
+
+body.dark .resizeHandle:active {
+    background-color: #666; /* Cor da linha de redimensionamento no tema escuro */
+}
+
+body.dark header {
+  background-color: #3f3e3e; /* Exemplo de cor de fundo escura */
+  color: white; /* Cor de texto para o tema escuro */
+}
+
+body.dark footer {
+    background-color: #3f3e3e; /* Exemplo de cor de fundo escura */
+    color: white; /* Cor de texto para o tema escuro */
+  }
+
+  
+  body.dark menu {
+    background-color: #333; /* Exemplo de cor de fundo escura */
+    color: white; /* Cor de texto para o tema escuro */
+  }
+  
+
+body.dark .container_menu {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark h1{
+    color: white;
+  }
+
+  body.dark  h2 {
+    color: white;
+  }
+
+  
+  body.dark footer a{
+    color:#da632c;
+  }
+
+
+  body.dark p{
+    color:#e0e0e0;
+  }
+
+  body.dark.admin{
+    color: #ee8421 !important;
+
+  }
+
+  body.dark ul{
+    color: #e2dede !important;
+}
+
+body.dark .fa-trash{
+  color: #ee3c21 !important;
+}
+

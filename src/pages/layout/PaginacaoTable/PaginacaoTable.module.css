@@ -1,0 +1,16 @@
+
+.pagination 
+{ display: flex;
+    margin-top: -2%;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    max-width: max-content;
+    width: 100%;
+    margin-right: 2%;
+    float: inline-end;
+    BACKGROUND-COLOR: rgb(195 188 188 / 20%); }
+     .pageItem { list-style: none; margin: 0 5px; } 
+     .pageLink { text-decoration: none; color: #e49827; padding: 5px 10px; border: 1px solid #ddd; border-radius: 5px; } 
+     .pageLink:hover { background-color: #787878; }
+      .active .pageLink { background-color: #e27e21; color: white; border-color:  white; }
